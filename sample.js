@@ -1,9 +1,17 @@
-/*--------------------set up-------------*/
-const index_container = document.querySelector(".index_container"); /* chọn ra element đầu tiên trong file HTML chứa class .index-container */
-/*--------------------set up-------------*/
 
+function remote() {
+    const index_container = document.querySelector(".index-container");
+    if (index_container != null){
+        create_index();
+    }
+}
+remote();
 /*----------------- hàm tạo bảng ----------*/
 function create_index() {
+
+    /*--------------------set up-------------*/
+    const index_container = document.querySelector(".index_container"); /* chọn ra element đầu tiên trong file HTML chứa class .index-container */
+    /*--------------------set up-------------*/
     
     /*  các bước thêm element vào container bằng JS 
     const [tên biến thành phần con (child)] = document.createElement("[tag của element]");
